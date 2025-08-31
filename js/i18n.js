@@ -2,6 +2,9 @@
 (function () {
   const translations = {
     en: {
+      'about.nameMobile': 'Zheng WAN',
+      'about.nameFirst': 'Zheng',
+      'about.nameLast': 'WAN',
       'nav.about': 'About',
       'nav.experience': 'Experience',
       'nav.education': 'Education',
@@ -13,7 +16,7 @@
       'sections.skills': 'Skills',
       'sections.interests': 'Interests',
       'sections.projects': 'Projects & Competitions',
-      'about.intro': "Welcome to my page. I’m a postgraduate student in Data Science and Business Analytics at ESSEC Business School and CentraleSupélec.",
+      'about.intro': "International Actuarial Studies Analyst (Chargé d'études actuarielles international) at AXA Health — EB Partner, Paris (first full-time role).",
       'about.download': 'Download CV (2025)',
       'about.motto': "Motto: Sans la liberté de blâmer, il n'est point d'éloge flatteur. — Beaumarchais",
       'skills.languages': 'Languages',
@@ -22,6 +25,9 @@
       'skills.business': 'Business & Finance'
     },
     fr: {
+      'about.nameMobile': 'Zheng WAN',
+      'about.nameFirst': 'Zheng',
+      'about.nameLast': 'WAN',
       'nav.about': 'À propos',
       'nav.experience': 'Expérience',
       'nav.education': 'Éducation',
@@ -33,7 +39,7 @@
       'sections.skills': 'Compétences',
       'sections.interests': 'Centres d’intérêt',
       'sections.projects': 'Projets & Compétitions',
-      'about.intro': "Bienvenue sur ma page. Je suis étudiant en master Data Science & Business Analytics à ESSEC Business School et CentraleSupélec.",
+      'about.intro': "Chargé d'études actuarielles international chez AXA Health — EB Partner à Paris ; mon premier poste à temps plein.",
       'about.download': 'Télécharger le CV (2025)',
       'about.motto': "Devise : Sans la liberté de blâmer, il n'est point d'éloge flatteur. — Beaumarchais",
       'skills.languages': 'Langues',
@@ -42,6 +48,9 @@
       'skills.business': 'Business & Finance'
     },
     zh: {
+      'about.nameMobile': '万铮',
+      'about.nameFirst': '万',
+      'about.nameLast': '铮',
       'nav.about': '关于',
       'nav.experience': '经历',
       'nav.education': '教育',
@@ -53,7 +62,7 @@
       'sections.skills': '技能',
       'sections.interests': '兴趣',
       'sections.projects': '项目与竞赛',
-      'about.intro': '欢迎来到我的主页。我是 ESSEC 与 CentraleSupélec 的数据科学与商业分析硕士在读生。',
+      'about.intro': '现任 AXA Health（EB Partner）国际精算研究分析师，工作地巴黎；这是我的第一份全职工作。',
       'about.download': '下载简历（2025）',
       'about.motto': '座右铭：没有指责的自由，就没有真诚的赞美。— 博马舍',
       'skills.languages': '语言',
@@ -87,7 +96,7 @@
   }
 
   function init() {
-    const saved = localStorage.getItem(LANG_KEY) || 'en';
+    const saved = localStorage.getItem(LANG_KEY) || 'zh';
     applyLang(saved);
     document.querySelectorAll('.lang-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -104,4 +113,3 @@
     init();
   }
 })();
-
